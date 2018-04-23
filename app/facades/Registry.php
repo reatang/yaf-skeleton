@@ -48,8 +48,8 @@ class Registry extends Facade
      *
      * @return mixed
      */
-    public static function get($key, $default = null)
+    public static function get($key)
     {
-        return YafRegistry::get($key) ?: $default;
+        return YafRegistry::get($key);
     }
 }
